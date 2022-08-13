@@ -10,24 +10,35 @@
 </head>
 
 <body>
-    <div id="container--main">
+    <nav>
+        <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+            </label>
+            <em id="theme-text">Dark Mode!</em>
+        </div>
+    </nav>
 
+    <div id="container--main">
         <section id="wrapper--hero" class="section--page">
             <img id="profile-pic" src="./assets/images/nayeem_ict2.jpg">
 
             <div>
                 <h2 id="user-name">Najmul Islam Nayeem</h2>
-                <p id="bio">Frontend Developer</p>
-                <p id="bio">Cumilla, Chattogram, Bangladesh</p>
-                <p id="email">📧 inayeem044@gmail.com</p>
+                <p id="bio">Software Engineer | <a href="https://www.linkedin.com/company/constant-concept-inc/"
+                        target="_blank" rel="noopener noreferrer">Constant Concept Inc</a></p>
+                <p>Cumilla, Chattogram, Bangladesh</p>
+                <p id="email">📧 <a href="mailto:inayeem044@gmail.com">inayeem044@gmail.com</a></p>
             </div>
         </section>
 
         <section class="section--page">
             <div id="socials--list">
+                <a href="https://www.linkedin.com/in/najmul-islam-nayeem-575081164/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/nayeem101/" target="_blank">Github</a>
                 <a href="https://www.facebook.com/nayeemf25/" target="_blank">Facebook</a>
                 <a href="https://twitter.com/s_nayeem101" target="_blank">Twitter</a>
-                <a href="https://github.com/nayeem101/" target="_blank">Github</a>
                 <a href="https://leetcode.com/nayeems101/" target="_blank">Leetcode</a>
                 <a href="./assets/Najmul Islam Nayeem CV.pdf" target="_blank">Download Resume</a>
             </div>
@@ -89,9 +100,6 @@
                     <li>Angular Reactive forms with custom Validations.</li>
                     <li>Router Guards were used to protect route.</li>
                     <li>Integrated REST API in the service for CRUD operations.</li>
-                    <li>Made regular contributions to Traversy Medias youtube channel (1.9m Subscribers)</li>
-                    <li>Tutorial videos included projects such as social networks, Ecommerce, real time video, stripe &
-                        paypal integrations and more </li>
                 </ul>
             </div>
 
@@ -109,31 +117,30 @@
                 </ul>
             </div>
 
+            <div class="line-break"></div>
+
         </section>
 
         <section class="section--page">
             <h2>Education</h2>
-
             <div class="card--education">
-               <h3>B.Sc. Engineering in Information & Communication Technology</h3>
-               <h4>Comilla University, Cumilla. April 2018 - 2023 | CGPA 3.78/4.00 (5th semester)</h4>
+                <h3>B.Sc. Engineering in ICT (Information & Communication Technology)</h3>
+                <h4>Comilla University, Cumilla. April 2018 - 2023 | CGPA 3.78/4.00 (5th semester)</h4>
             </div>
 
             <div class="card--education">
-               <h3>H.S.C - 2017</h3>
-               <h4>Ispahani Public Scholl & College, Cumilla. GPA 4.83/5.00</h4>
+                <h3>H.S.C - 2017</h3>
+                <h4>Ispahani Public Scholl & College, Cumilla. GPA 4.83/5.00</h4>
             </div>
 
             <div class="card--education">
-               <h3>S.S.C - 2015</h3>
-               <h4>Comilla Zilla School, Cumilla. GPA 5.00/5.00</h4>
+                <h3>S.S.C - 2015</h3>
+                <h4>Comilla Zilla School, Cumilla. GPA 5.00/5.00</h4>
             </div>
-
         </section>
-
-
     </div>
 
+    <script src="./main.js"></script>
 </body>
 
 </html>
