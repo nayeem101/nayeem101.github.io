@@ -90,19 +90,6 @@
         .fade-in {
             animation: fadeIn 0.6s ease-out;
         }
-        
-        .project-card {
-            transition: all 0.3s ease;
-        }
-        
-        .project-card:hover .project-overlay {
-            opacity: 1;
-        }
-        
-        .project-overlay {
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
@@ -166,7 +153,7 @@
                 <div class="md:w-1/2 flex justify-center">
                     <div class="relative">
                         <div class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-xl">
-                            <img src="https://picsum.photos/seed/najmulprofile/800/800.jpg" alt="Najmul Islam Nayeem" class="w-full h-full object-cover">
+                            <img src="https://nayeem101.github.io/assets/images/nayeem.png" alt="Najmul Islam Nayeem" class="w-full h-full object-cover">
                         </div>
                         <div class="absolute -bottom-4 -right-4 bg-white rounded-lg shadow-lg p-4">
                             <div class="flex items-center space-x-2">
@@ -360,103 +347,71 @@
             <h2 class="text-3xl font-bold text-center mb-12">Featured Projects</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Project 1 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden card-hover project-card">
-                    <div class="relative h-48 overflow-hidden">
-                        <img src="https://picsum.photos/seed/multitexerp/600/400.jpg" alt="Multitex ERP" class="w-full h-full object-cover">
-                        <div class="project-overlay absolute inset-0 bg-indigo-600 bg-opacity-90 flex items-center justify-center">
-                            <a href="#" class="text-white font-medium hover:underline">View Details</a>
-                        </div>
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <h3 class="text-xl font-semibold mb-2">Multitex ERP</h3>
+                    <p class="text-gray-600 mb-4">All in one garment Manufacturing ERP system.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="text-xs px-2 py-1 bg-gray-100 text-gray-700 rounded">Angular 19</span>
+                        <span class="text-xs px-2 py-1 bg-gray-100 text-gray-700 rounded">PrimeNg 19</span>
+                        <span class="text-xs px-2 py-1 bg-gray-100 text-gray-700 rounded">TypeScript</span>
+                        <span class="text-xs px-2 py-1 bg-gray-100 text-gray-700 rounded">RxJS</span>
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Multitex ERP</h3>
-                        <p class="text-gray-600 mb-4">All in one garment Manufacturing ERP system.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="text-xs px-2 py-1 bg-gray-100 text-gray-700 rounded">Angular 19</span>
-                            <span class="text-xs px-2 py-1 bg-gray-100 text-gray-700 rounded">PrimeNg 19</span>
-                            <span class="text-xs px-2 py-1 bg-gray-100 text-gray-700 rounded">TypeScript</span>
-                            <span class="text-xs px-2 py-1 bg-gray-100 text-gray-700 rounded">RxJS</span>
-                        </div>
-                        <ul class="text-sm text-gray-600 space-y-1">
-                            <li>• Implemented KPI module</li>
-                            <li>• Developed dynamic UI components</li>
-                            <li>• Created reusable Angular components</li>
-                        </ul>
-                    </div>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Implemented KPI module</li>
+                        <li>• Developed dynamic UI components</li>
+                        <li>• Created reusable Angular components</li>
+                    </ul>
                 </div>
                 
                 <!-- Project 2 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden card-hover project-card">
-                    <div class="relative h-48 overflow-hidden">
-                        <img src="https://picsum.photos/seed/brightzy/600/400.jpg" alt="Brightzy" class="w-full h-full object-cover">
-                        <div class="project-overlay absolute inset-0 bg-indigo-600 bg-opacity-90 flex items-center justify-center">
-                            <a href="#" class="text-white font-medium hover:underline">View Details</a>
-                        </div>
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <h3 class="text-xl font-semibold mb-2">Brightzy</h3>
+                    <p class="text-gray-600 mb-4">Interactive learning platform for kids.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="text-xs px-2 py-1 bg-gray-100 text-gray-700 rounded">Angular 12</span>
+                        <span class="text-xs px-2 py-1 bg-gray-100 text-gray-700 rounded">Angular Material</span>
+                        <span class="text-xs px-2 py-1 bg-gray-100 text-gray-700 rounded">TypeScript</span>
+                        <span class="text-xs px-2 py-1 bg-gray-100 text-gray-700 rounded">RxJS</span>
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Brightzy</h3>
-                        <p class="text-gray-600 mb-4">Interactive learning platform for kids.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="text-xs px-2 py-1 bg-gray-100 text-gray-700 rounded">Angular 12</span>
-                            <span class="text-xs px-2 py-1 bg-gray-100 text-gray-700 rounded">Angular Material</span>
-                            <span class="text-xs px-2 py-1 bg-gray-100 text-gray-700 rounded">TypeScript</span>
-                            <span class="text-xs px-2 py-1 bg-gray-100 text-gray-700 rounded">RxJS</span>
-                        </div>
-                        <ul class="text-sm text-gray-600 space-y-1">
-                            <li>• Interactive reading foundation games</li>
-                            <li>• Implemented API and reporting logic</li>
-                            <li>• Fixed bugs to improve functionality</li>
-                        </ul>
-                    </div>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Interactive reading foundation games</li>
+                        <li>• Implemented API and reporting logic</li>
+                        <li>• Fixed bugs to improve functionality</li>
+                    </ul>
                 </div>
                 
                 <!-- Project 3 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden card-hover project-card">
-                    <div class="relative h-48 overflow-hidden">
-                        <img src="https://picsum.photos/seed/lovebite/600/400.jpg" alt="LoveBite.io" class="w-full h-full object-cover">
-                        <div class="project-overlay absolute inset-0 bg-indigo-600 bg-opacity-90 flex items-center justify-center">
-                            <a href="#" class="text-white font-medium hover:underline">View Details</a>
-                        </div>
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <h3 class="text-xl font-semibold mb-2">LoveBite.io</h3>
+                    <p class="text-gray-600 mb-4">Modern Pet care manager application.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="text-xs px-2 py-1 bg-gray-100 text-gray-700 rounded">Next.js 15</span>
+                        <span class="text-xs px-2 py-1 bg-gray-100 text-gray-700 rounded">TypeScript</span>
+                        <span class="text-xs px-2 py-1 bg-gray-100 text-gray-700 rounded">Supabase</span>
+                        <span class="text-xs px-2 py-1 bg-gray-100 text-gray-700 rounded">Stripe</span>
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">LoveBite.io</h3>
-                        <p class="text-gray-600 mb-4">Modern Pet care manager application.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="text-xs px-2 py-1 bg-gray-100 text-gray-700 rounded">Next.js 15</span>
-                            <span class="text-xs px-2 py-1 bg-gray-100 text-gray-700 rounded">TypeScript</span>
-                            <span class="text-xs px-2 py-1 bg-gray-100 text-gray-700 rounded">Supabase</span>
-                            <span class="text-xs px-2 py-1 bg-gray-100 text-gray-700 rounded">Stripe</span>
-                        </div>
-                        <ul class="text-sm text-gray-600 space-y-1">
-                            <li>• Developed full application from scratch</li>
-                            <li>• Implemented authentication with Supabase</li>
-                            <li>• Integrated Stripe payment subscription</li>
-                        </ul>
-                    </div>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Developed full application from scratch</li>
+                        <li>• Implemented authentication with Supabase</li>
+                        <li>• Integrated Stripe payment subscription</li>
+                    </ul>
                 </div>
                 
                 <!-- Project 4 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden card-hover project-card">
-                    <div class="relative h-48 overflow-hidden">
-                        <img src="https://picsum.photos/seed/ecommerceapi/600/400.jpg" alt="E-commerce API" class="w-full h-full object-cover">
-                        <div class="project-overlay absolute inset-0 bg-indigo-600 bg-opacity-90 flex items-center justify-center">
-                            <a href="#" class="text-white font-medium hover:underline">View Details</a>
-                        </div>
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <h3 class="text-xl font-semibold mb-2">E-commerce Web API</h3>
+                    <p class="text-gray-600 mb-4">Single vendor e-commerce web API.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="text-xs px-2 py-1 bg-gray-100 text-gray-700 rounded">Node.js</span>
+                        <span class="text-xs px-2 py-1 bg-gray-100 text-gray-700 rounded">NestJS</span>
+                        <span class="text-xs px-2 py-1 bg-gray-100 text-gray-700 rounded">Prisma</span>
+                        <span class="text-xs px-2 py-1 bg-gray-100 text-gray-700 rounded">PostgreSQL</span>
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">E-commerce Web API</h3>
-                        <p class="text-gray-600 mb-4">Single vendor e-commerce web API.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="text-xs px-2 py-1 bg-gray-100 text-gray-700 rounded">Node.js</span>
-                            <span class="text-xs px-2 py-1 bg-gray-100 text-gray-700 rounded">NestJS</span>
-                            <span class="text-xs px-2 py-1 bg-gray-100 text-gray-700 rounded">Prisma</span>
-                            <span class="text-xs px-2 py-1 bg-gray-100 text-gray-700 rounded">PostgreSQL</span>
-                        </div>
-                        <ul class="text-sm text-gray-600 space-y-1">
-                            <li>• Developed robust API for e-commerce</li>
-                            <li>• Implemented user authentication</li>
-                            <li>• Optimized API endpoints for performance</li>
-                        </ul>
-                    </div>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Developed robust API for e-commerce</li>
+                        <li>• Implemented user authentication</li>
+                        <li>• Optimized API endpoints for performance</li>
+                    </ul>
                 </div>
             </div>
         </div>
